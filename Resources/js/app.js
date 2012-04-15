@@ -17,8 +17,7 @@ try
 	db = Titanium.Database.openFile(filesPath+"episodes.db");
 	//alert ("Titanium.Database.DB.getPath " + db.getPath());
  	var rows = db.execute('SELECT * FROM Actor');
-//alert("Here OK");
-
+ 
 	while(rows.isValidRow()) 
 	{
 		//alert("An actor");
