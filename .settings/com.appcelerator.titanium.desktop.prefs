@@ -1,0 +1,20 @@
+#Tue Apr 03 20:47:11 BST 2012
+eclipse.preferences.version=1
+packages/Linux\ Intel\ 32-bit/app_page=http\://api.appcelerator.net/p/pages/app_page?token\=N4wnFcH6
+packages/Linux\ Intel\ 32-bit/app_version=1.0
+packages/Linux\ Intel\ 32-bit/label=Linux Intel 32-bit
+packages/Linux\ Intel\ 32-bit/platform=linux
+packages/Linux\ Intel\ 32-bit/pubdate=2012-04-03 11\:36\:48
+packages/Linux\ Intel\ 32-bit/url=http\://api.appcelerator.net/p/v1/download?token\=P4wnGMr6
+packages/Linux\ Intel\ 64-bit/app_page=http\://api.appcelerator.net/p/pages/app_page?token\=N4wnFcH6
+packages/Linux\ Intel\ 64-bit/app_version=1.0
+packages/Linux\ Intel\ 64-bit/label=Linux Intel 64-bit
+packages/Linux\ Intel\ 64-bit/platform=linux
+packages/Linux\ Intel\ 64-bit/pubdate=2012-04-03 11\:36\:48
+packages/Linux\ Intel\ 64-bit/url=http\://api.appcelerator.net/p/v1/download?token\=x4wnGMv3
+packages/Windows\ 32-bit/app_page=http\://api.appcelerator.net/p/pages/app_page?token\=N4wnFcH6
+packages/Windows\ 32-bit/app_version=1.0
+packages/Windows\ 32-bit/label=Windows 32-bit
+packages/Windows\ 32-bit/platform=win32
+packages/Windows\ 32-bit/pubdate=2012-04-03 11\:36\:48
+packages/Windows\ 32-bit/url=http\://api.appcelerator.net/p/v1/download?token\=M4wnGMW4
