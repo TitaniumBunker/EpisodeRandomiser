@@ -2,6 +2,7 @@
 
 var db;	// Database of episodes.
 var DB_NAME = 'episodes.db'
+var DB_PAGE_SIZE=5;
 
 $(document).ready(function() {
 try
@@ -33,6 +34,7 @@ try
 	rows.close();
 	Titanium.API.debug("-- Counting ACTORS    --");
 	Titanium.API.debug("-- EXECUTION COMPLETE --");
+	list_episodes(0,0);
 }
 catch(err)
 {
@@ -62,5 +64,35 @@ catch(err)
 });
 
 
+// Lists all episodes
+// - For test purposes will use the actor table.
+function list_episodes(page, field, order)
+{
+	//SELECT * FROM Posts LIMIT 100,x
+	//   rc = DB.db.execute(        "INSERT INTO images (title, description) VALUES (?, ?)", 'test', 'a nice description');
+	//DB_PAGE_SIZE
+	var result ="";
+	var rows = db.execute('SELECT * FROM Actor LIMIT ?,?',0,DB_PAGE_SIZE);
+	
+	result = "<table id=&quot;theTable&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;sortable-onload-3 no-arrow rowstyle-alt colstyle-alt paginate-10 max-pages-7 paginationcallback-callbackTest-calculateTotalRating paginationcallback-callbackTest-displayTextInfo sortcompletecallback-callbackTest-calculateTotalRating&quot;>";
 
+
+	// Sorting needed?
+ 	while(rows.isValidRow()) 
+	{
+		result = result + "<tr>";
+    	result = result + "<td>06/30/2004</td>";
+    	result = result + "<td class=&quot;sized1&quot;><a href=&quot;http://www.the-numbers.com/movies/2004/SPID2.php&quto;>Spider-Man 2</a></td>";
+    	result = result + "<td class=&quot;sized2&quot;><i>Columbia</i></td>";
+    	result = result + "<td class=&quot;sized3&quot;>$200,000,000</td>";
+    	result = result + "<td class=&quot;sized3&quot;>$373,524,485</td>";
+    	result = result + "<td class=&quot;sized3&quot;>$783,524,485</td>";
+    	result = result + "<td>10</td>";
+  		result = result + "</tr>";
+		rows.next();
+	}
+
+	result = result + "</table>";
+	$("#episode_list").html(result);
+}
 
